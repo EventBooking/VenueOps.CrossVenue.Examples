@@ -1,6 +1,6 @@
-namespace CrossVenue.Examples.CVC.Models;
+namespace CVC.Example.Models;
 
-public class EventChangeModel
+public class EventChangePayload : BasePayload
 {
     public EventResponse Event { get; set; }
     public IEnumerable<BookedSpaceResponse> BookedSpaces { get; set; }

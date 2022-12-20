@@ -1,4 +1,4 @@
-﻿using CrossVenue.Examples.CVC.Models;
+﻿using CVC.Example.Models;
 using VenueOps.OpenApi;
 
 namespace CVC.Example.Services;
@@ -12,7 +12,7 @@ public class SampleGenerator
         _client = client;
     }
 
-    public async Task<VenueChangeModel> LoadVenue()
+    public async Task<VenueChangePayload> LoadVenue(string clusterCode, string tenantId)
     {
         var allVenues = await _client.GeneralSetup.GetVenuesAsync();
         var allRooms = await _client.GeneralSetup.GetRoomsAsync();
@@ -20,29 +20,33 @@ public class SampleGenerator
         var venue = allVenues.Response.First();
         var rooms = allRooms.Response.Where(x => x.VenueId == venue.Id);
 
-        var model = new VenueChangeModel
+        var model = new VenueChangePayload
         {
+            ClusterCode = clusterCode,
+            TenantId = tenantId,
             Venue = venue,
             Rooms = rooms
         };
         return model;
     }
 
-    public async Task<RoomChangeModel> LoadRoom(VenueResponse venue)
+    public async Task<RoomChangePayload> LoadRoom(string clusterCode, string tenantId, VenueResponse venue)
     {
         var allRooms = await _client.GeneralSetup.GetRoomsAsync();
         
         var room = allRooms.Response.First(x => x.VenueId == venue.Id);
 
-        var model = new RoomChangeModel
+        var model = new RoomChangePayload
         {
+            ClusterCode = clusterCode,
+            TenantId = tenantId,
             Venue = venue,
             Room = room
         };
         return model;
     }
 
-    public async Task<EventChangeModel> LoadEvent(VenueChangeModel venue)
+    public async Task<EventChangePayload> LoadEvent(string clusterCode, string tenantId, VenueChangePayload venue)
     {
         var allVenues = await _client.GeneralSetup.GetVenuesAsync();
         var allRooms = await _client.GeneralSetup.GetRoomsAsync();
@@ -68,8 +72,10 @@ public class SampleGenerator
         var venues = allVenues.Response.Where(x => oneEvent.VenueIds.Contains(x.Id));
         var rooms = allRooms.Response.Where(x => oneEvent.RoomIds.Contains(x.Id));
         
-        var model = new EventChangeModel
+        var model = new EventChangePayload
         {
+            ClusterCode = clusterCode,
+            TenantId = tenantId,
             Event = oneEvent,
             BookedSpaces = bookedSpaces.Response,
             Venues = venues,

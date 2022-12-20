@@ -1,6 +1,6 @@
-﻿namespace CrossVenue.Examples.CVC.Models;
+﻿namespace CVC.Example.Models;
 
-public class VenueChangeModel
+public class VenueChangePayload : BasePayload
 {
     public VenueResponse Venue { get; set; }
     public IEnumerable<RoomResponse> Rooms { get; set; }

@@ -142,5 +142,7 @@
       "IsActive": true,
       "ConflictingRoomIds": []
     }
-  ]
+  ],
+  "ClusterCode": "indv",
+  "TenantId": "account-3420-A"
 }
