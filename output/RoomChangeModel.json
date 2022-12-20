@@ -1,0 +1,34 @@
+{
+  "Venue": {
+    "Id": "venue-17",
+    "Name": "Arena"
+  },
+  "Room": {
+    "Id": "room-5015",
+    "Name": "VenueOps Arena",
+    "MaxCapacity": null,
+    "SquareFootage": null,
+    "VenueId": "venue-17",
+    "VenueName": "Arena",
+    "Group": null,
+    "ItemCode": null,
+    "SubRoomIds": [
+      "room-451",
+      "room-452",
+      "room-424",
+      "room-10096-A",
+      "room-419",
+      "room-13857-A"
+    ],
+    "IsComboRoom": true,
+    "IsActive": true,
+    "ConflictingRoomIds": [
+      "room-424",
+      "room-10096-A",
+      "room-452",
+      "room-419",
+      "room-451",
+      "room-13857-A"
+    ]
+  }
+}

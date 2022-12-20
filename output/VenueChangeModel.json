@@ -1,0 +1,146 @@
+{
+  "Venue": {
+    "Id": "venue-17",
+    "Name": "Arena"
+  },
+  "Rooms": [
+    {
+      "Id": "room-5015",
+      "Name": "VenueOps Arena",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-17",
+      "VenueName": "Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [
+        "room-451",
+        "room-452",
+        "room-424",
+        "room-10096-A",
+        "room-419",
+        "room-13857-A"
+      ],
+      "IsComboRoom": true,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-424",
+        "room-10096-A",
+        "room-452",
+        "room-419",
+        "room-451",
+        "room-13857-A"
+      ]
+    },
+    {
+      "Id": "room-451",
+      "Name": "Arena Floor",
+      "MaxCapacity": 0,
+      "SquareFootage": 30000,
+      "VenueId": "venue-17",
+      "VenueName": "Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-5015"
+      ]
+    },
+    {
+      "Id": "room-452",
+      "Name": "Arena Club",
+      "MaxCapacity": 0,
+      "SquareFootage": 800,
+      "VenueId": "venue-17",
+      "VenueName": "Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-5015"
+      ]
+    },
+    {
+      "Id": "room-424",
+      "Name": "Staff Lounge",
+      "MaxCapacity": 0,
+      "SquareFootage": 0,
+      "VenueId": "venue-17",
+      "VenueName": "Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-5015"
+      ]
+    },
+    {
+      "Id": "room-10096-A",
+      "Name": "Restaurant",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-17",
+      "VenueName": "Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-5015"
+      ]
+    },
+    {
+      "Id": "room-419",
+      "Name": "Suite 1",
+      "MaxCapacity": 600,
+      "SquareFootage": 0,
+      "VenueId": "venue-17",
+      "VenueName": "Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-5015"
+      ]
+    },
+    {
+      "Id": "room-13857-A",
+      "Name": "Suite 2",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-17",
+      "VenueName": "Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-5015"
+      ]
+    },
+    {
+      "Id": "room-25369-A",
+      "Name": "New Room",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-17",
+      "VenueName": "Arena",
+      "Group": "New group",
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": []
+    }
+  ]
+}
