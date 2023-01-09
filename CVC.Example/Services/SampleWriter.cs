@@ -10,6 +10,8 @@ public class SampleWriter
     public SampleWriter(string dir)
     {
         _dir = dir;
+        if (!Directory.Exists(_dir))
+            throw new Exception($"Please create the {_dir} directory before running");
     }
 
     public async Task Write<T>(T obj, int? page = null) where T : BasePayload
