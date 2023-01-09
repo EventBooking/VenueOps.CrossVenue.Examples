@@ -1,4 +1,4 @@
-﻿namespace CVC.Example.Models;
+﻿namespace CVC.Example.Models.Incremental;
 
 public class VenueChangePayload : BasePayload
 {

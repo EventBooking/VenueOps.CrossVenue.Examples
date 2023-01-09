@@ -1,0 +1,27 @@
+{
+  "Venues": [
+    {
+      "Venue": {
+        "Id": "venue-17",
+        "Name": "Arena"
+      },
+      "Rooms": []
+    },
+    {
+      "Venue": {
+        "Id": "venue-33",
+        "Name": "Convention Center"
+      },
+      "Rooms": []
+    },
+    {
+      "Venue": {
+        "Id": "venue-161",
+        "Name": "Theater"
+      },
+      "Rooms": []
+    }
+  ],
+  "ClusterCode": "indv",
+  "TenantId": "account-3420-A"
+}

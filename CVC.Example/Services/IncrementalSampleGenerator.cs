@@ -1,13 +1,14 @@
 ﻿using CVC.Example.Models;
+using CVC.Example.Models.Incremental;
 using VenueOps.OpenApi;
 
 namespace CVC.Example.Services;
 
-public class SampleGenerator
+public class IncrementalSampleGenerator
 {
     private readonly ApiClient _client;
 
-    public SampleGenerator(ApiClient client)
+    public IncrementalSampleGenerator(ApiClient client)
     {
         _client = client;
     }
