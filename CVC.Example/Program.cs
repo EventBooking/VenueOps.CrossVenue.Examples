@@ -13,7 +13,7 @@ var client = new ApiClient(clusterCode, clientId, clientSecret);
 
 // INCREMENTAL
 var incrementalGenerator = new IncrementalSampleGenerator(client);
-var incrementalWriter = new SampleWriter(Path.Join(dir, "incremental"));
+var incrementalWriter = new SampleWriter(Path.Join(dir, "incremental"), "cvc.sample.data", $"{tenantId}/incremental");
 
 var venueModel = await incrementalGenerator.LoadVenue(clusterCode, tenantId);
 await incrementalWriter.Write(venueModel);
@@ -26,18 +26,26 @@ await incrementalWriter.Write(eventModel);
 
 // BULK
 var bulkGenerator = new BulkSampleGenerator(client);
-var bulkWriter = new SampleWriter(Path.Join(dir, "bulk"));
+var bulkWriter = new SampleWriter(Path.Join(dir, "bulk"), "cvc.sample.data", $"{tenantId}/bulk");
 
 var setupModel = await bulkGenerator.LoadSetup(clusterCode, tenantId);
 await bulkWriter.Write(setupModel);
 
-const int pageSize = 28;
 var start = DateTime.Parse("2022-12-01");
+var end = DateTime.Parse("2025-12-01");
+var pageSize = TimeSpan.FromDays(28);
     
 var roomIds = venueModel.Rooms.Select(x => x.Id).ToList();
-for (var page = 0; page < 4; page++)
+var page = 0;
+for ( var date = start; date < end; date += pageSize)
 {
-    var bulkEvents = await bulkGenerator.LoadEvents(clusterCode, tenantId, venueModel.Venue.Id, roomIds, start, start.AddDays(pageSize));
-    await bulkWriter.Write(bulkEvents, page);
-    start += TimeSpan.FromDays(28);
+    var bulkEvents =
+        await bulkGenerator.LoadEvents(clusterCode, tenantId, venueModel.Venue.Id, roomIds, date, date + pageSize);
+    if (bulkEvents.Events.Any())
+    {
+        await bulkWriter.Write(bulkEvents, page);
+        page++;
+    }
 }
+
+// Bucket: cvc.sample.data

@@ -18,10 +18,10 @@ public class BulkSampleGenerator
         var allVenues = await _client.GeneralSetup.GetVenuesAsync();
         var allRooms = await _client.GeneralSetup.GetRoomsAsync();
 
-        var venues = allVenues.Response.Select(x => new VenueBulkSingle
+        var venues = allVenues.Response.Select(v => new VenueBulkSingle
         {
-            Venue = x,
-            Rooms = allRooms.Response.Where(x=>x.VenueId == x.Id)
+            Venue = v,
+            Rooms = allRooms.Response.Where(r => r.VenueId == v.Id)
         });
         
         var model = new SetupBulkPayload
@@ -32,7 +32,7 @@ public class BulkSampleGenerator
         };
         return model;
     }
-    
+
     public async Task<EventBulkPayload> LoadEvents(string clusterCode, string tenantId, string venueId, IEnumerable<string> roomIds, DateTime start, DateTime end) 
     {
         var request = new QueryEventsByDateRangeRequest
