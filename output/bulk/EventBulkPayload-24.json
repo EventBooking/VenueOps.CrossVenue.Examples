@@ -1,0 +1,129 @@
+{
+  "Events": [
+    {
+      "Event": {
+        "Id": "event-4336-A",
+        "Name": "Con Barrell Live",
+        "EventTypeId": "eventtype-1064-A",
+        "EventTypeName": "Comedy",
+        "AccountId": "account-1027",
+        "AccountName": "Event House",
+        "IsInternal": false,
+        "IsBlackout": false,
+        "Start": "2025-03-07",
+        "End": "2025-03-07",
+        "StartTime": null,
+        "EndTime": null,
+        "VenueIds": [
+          "venue-662-A"
+        ],
+        "VenueNames": [
+          "UB Arena"
+        ],
+        "RoomIds": [
+          "room-2447-A"
+        ],
+        "RoomNames": [
+          "Arena Floor"
+        ],
+        "Description": null,
+        "BusinessClassificationId": "3143e1eb0db54ffc9469f5fbfaececde",
+        "BusinessClassificationName": null,
+        "GenreId": null,
+        "GenreName": null,
+        "UniqueNumber": "1-4336",
+        "Website": null,
+        "MarketSegment": "Conference / Corporate",
+        "CreatedById": "user-44689-A",
+        "CreatedByName": "Arena Only All Access",
+        "AccountUniqueNumber": "1-1027",
+        "IsAccountTaxExempt": false,
+        "DecisionDate": null,
+        "ProbabilityOfClosing": 0,
+        "EstimatedTotalAttendance": 0,
+        "BookedDefiniteOn": null,
+        "BookedOn": "2018-11-08T20:34:04Z",
+        "ExpectedRevenue": 0.0,
+        "TotalActualRevenue": 10000.0,
+        "EstimatedAttendance": null,
+        "ActualAttendance": null,
+        "IsTentative": true,
+        "IsDefinite": false,
+        "IsProspect": false,
+        "IsCanceled": false,
+        "IsActive": true,
+        "IsEventHiddenFromNonBookers": false,
+        "IsFinalized": false,
+        "IsLost": false,
+        "ReasonLost": null,
+        "ApprovedProposalId": null,
+        "ActiveContractId": null,
+        "HasContract": false,
+        "IsTentativeNoContract": true,
+        "IsDefiniteNoContract": false,
+        "IsPendingContract": false,
+        "HasNoProposalOrContract": true,
+        "IsProposalCreated": false,
+        "IsProposalSent": false,
+        "IsProposalApproved": false,
+        "IsContractWaitingToSend": false,
+        "IsContractWaitingToSendForApproval": false,
+        "IsContractPendingApproval": false,
+        "IsContractSent": false,
+        "IsContractSigned": false,
+        "ShowNameOnAvails": false,
+        "SeriesId": null,
+        "SeriesName": null,
+        "ExternalIds": [],
+        "ContactRoles": [
+          {
+            "ContactId": "contact-2502",
+            "AccountId": "account-1857",
+            "AccountName": "ABC Company",
+            "Role": null,
+            "Title": null,
+            "Name": "Evelyn  Ingram",
+            "Email": "evelyn@eventbooking.com",
+            "EmailType": null,
+            "Phone": "865-966-4900",
+            "PhoneType": null,
+            "Address1": null,
+            "Address2": null,
+            "AddressCity": null,
+            "AddressStateProvince": null,
+            "AddressPostalCode": null,
+            "AddressCountry": null,
+            "AddressType": null
+          }
+        ]
+      },
+      "BookedSpaces": [
+        {
+          "Id": "860ea71f21c0484890423c8e523a919c",
+          "Description": "Test event",
+          "RoomId": "room-2447-A",
+          "RoomName": "Arena Floor",
+          "RoomSetup": null,
+          "VenueId": "venue-662-A",
+          "Attendance": null,
+          "RoomCapacity": 15000,
+          "SquareFootage": 50000,
+          "OptionNumber": 1,
+          "StartDate": "2025-03-07",
+          "EndDate": "2025-03-07",
+          "IsAllDay": true,
+          "StartTime": null,
+          "EndTime": null,
+          "BookedStatus": 0,
+          "SpaceUsageId": null,
+          "SpaceUsageName": null,
+          "UsageType": 0,
+          "NumberOfHours": 24.0,
+          "IsInvoiced": false
+        }
+      ]
+    }
+  ],
+  "ClusterCode": "indv",
+  "TenantId": "account-3421-A"
+}

@@ -7,4 +7,9 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="AWSSDK.S3" Version="3.7.102" />
+      <PackageReference Include="VenueOps.OpenApi" Version="1.48.2" />
+    </ItemGroup>
+
 </Project>

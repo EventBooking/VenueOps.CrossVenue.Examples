@@ -1,148 +1,369 @@
 {
   "Venue": {
-    "Id": "venue-17",
-    "Name": "Arena"
+    "Id": "venue-662-A",
+    "Name": "UB Arena"
   },
   "Rooms": [
     {
-      "Id": "room-5015",
-      "Name": "VenueOps Arena",
+      "Id": "room-2452-A",
+      "Name": "Arena (entire)",
       "MaxCapacity": null,
       "SquareFootage": null,
-      "VenueId": "venue-17",
-      "VenueName": "Arena",
-      "Group": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Arena",
       "ItemCode": null,
       "SubRoomIds": [
-        "room-451",
-        "room-452",
-        "room-424",
-        "room-10096-A",
-        "room-419",
-        "room-13857-A"
+        "room-2447-A",
+        "room-2455-A",
+        "room-2454-A",
+        "room-2440-A"
       ],
       "IsComboRoom": true,
       "IsActive": true,
       "ConflictingRoomIds": [
-        "room-424",
-        "room-10096-A",
-        "room-452",
-        "room-419",
-        "room-451",
-        "room-13857-A"
+        "room-2447-A",
+        "room-2454-A",
+        "room-2455-A",
+        "room-2440-A"
       ]
     },
     {
-      "Id": "room-451",
+      "Id": "room-2447-A",
       "Name": "Arena Floor",
-      "MaxCapacity": 0,
-      "SquareFootage": 30000,
-      "VenueId": "venue-17",
-      "VenueName": "Arena",
-      "Group": null,
+      "MaxCapacity": 15000,
+      "SquareFootage": 50000,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Arena",
       "ItemCode": null,
       "SubRoomIds": [],
       "IsComboRoom": false,
       "IsActive": true,
       "ConflictingRoomIds": [
-        "room-5015"
+        "room-2452-A"
       ]
     },
     {
-      "Id": "room-452",
+      "Id": "room-2454-A",
+      "Name": "Arena Concourse",
+      "MaxCapacity": 2000,
+      "SquareFootage": 10000,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Arena",
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-2452-A"
+      ]
+    },
+    {
+      "Id": "room-2440-A",
+      "Name": "Lobby",
+      "MaxCapacity": 500,
+      "SquareFootage": 5000,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Arena",
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-2452-A"
+      ]
+    },
+    {
+      "Id": "room-2455-A",
       "Name": "Arena Club",
-      "MaxCapacity": 0,
-      "SquareFootage": 800,
-      "VenueId": "venue-17",
-      "VenueName": "Arena",
-      "Group": null,
+      "MaxCapacity": 500,
+      "SquareFootage": 2500,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Arena",
       "ItemCode": null,
       "SubRoomIds": [],
       "IsComboRoom": false,
       "IsActive": true,
       "ConflictingRoomIds": [
-        "room-5015"
+        "room-2452-A"
       ]
     },
     {
-      "Id": "room-424",
-      "Name": "Staff Lounge",
-      "MaxCapacity": 0,
-      "SquareFootage": 0,
-      "VenueId": "venue-17",
-      "VenueName": "Arena",
-      "Group": null,
+      "Id": "room-2317-A",
+      "Name": "Business Zone",
+      "MaxCapacity": 500,
+      "SquareFootage": 5000,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Arena",
       "ItemCode": null,
-      "SubRoomIds": [],
-      "IsComboRoom": false,
+      "SubRoomIds": [
+        "room-2320-A",
+        "room-2321-A"
+      ],
+      "IsComboRoom": true,
       "IsActive": true,
       "ConflictingRoomIds": [
-        "room-5015"
+        "room-2321-A",
+        "room-2320-A",
+        "room-2343-A"
       ]
     },
     {
-      "Id": "room-10096-A",
-      "Name": "Restaurant",
+      "Id": "room-2320-A",
+      "Name": "Business Zone A",
       "MaxCapacity": null,
       "SquareFootage": null,
-      "VenueId": "venue-17",
-      "VenueName": "Arena",
-      "Group": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Arena",
       "ItemCode": null,
       "SubRoomIds": [],
       "IsComboRoom": false,
       "IsActive": true,
       "ConflictingRoomIds": [
-        "room-5015"
+        "room-2343-A",
+        "room-2317-A"
       ]
     },
     {
-      "Id": "room-419",
-      "Name": "Suite 1",
-      "MaxCapacity": 600,
-      "SquareFootage": 0,
-      "VenueId": "venue-17",
-      "VenueName": "Arena",
-      "Group": null,
-      "ItemCode": null,
-      "SubRoomIds": [],
-      "IsComboRoom": false,
-      "IsActive": true,
-      "ConflictingRoomIds": [
-        "room-5015"
-      ]
-    },
-    {
-      "Id": "room-13857-A",
-      "Name": "Suite 2",
+      "Id": "room-2321-A",
+      "Name": "Business Zone B",
       "MaxCapacity": null,
       "SquareFootage": null,
-      "VenueId": "venue-17",
-      "VenueName": "Arena",
-      "Group": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Arena",
       "ItemCode": null,
       "SubRoomIds": [],
       "IsComboRoom": false,
       "IsActive": true,
       "ConflictingRoomIds": [
-        "room-5015"
+        "room-2343-A",
+        "room-2317-A"
       ]
     },
     {
-      "Id": "room-25369-A",
-      "Name": "New Room",
-      "MaxCapacity": null,
-      "SquareFootage": null,
-      "VenueId": "venue-17",
-      "VenueName": "Arena",
-      "Group": "New group",
+      "Id": "room-2378-A",
+      "Name": "Board Walk / Main Concourse",
+      "MaxCapacity": 2000,
+      "SquareFootage": 20000,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Arena",
       "ItemCode": null,
       "SubRoomIds": [],
       "IsComboRoom": false,
       "IsActive": true,
       "ConflictingRoomIds": []
+    },
+    {
+      "Id": "room-2319-A",
+      "Name": "VIP Lounge",
+      "MaxCapacity": 0,
+      "SquareFootage": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Arena",
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": []
+    },
+    {
+      "Id": "room-2376-A",
+      "Name": "Practice Court",
+      "MaxCapacity": 1500,
+      "SquareFootage": 10000,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Arena",
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": []
+    },
+    {
+      "Id": "room-2323-A",
+      "Name": "Dressing Room 1",
+      "MaxCapacity": 10,
+      "SquareFootage": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Dressing Rooms",
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": []
+    },
+    {
+      "Id": "room-2324-A",
+      "Name": "Dressing Room 2",
+      "MaxCapacity": 10,
+      "SquareFootage": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Dressing Rooms",
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-2349-A"
+      ]
+    },
+    {
+      "Id": "room-7533-A",
+      "Name": "Dressing Room 3",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Dressing Rooms",
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": []
+    },
+    {
+      "Id": "room-4743-A",
+      "Name": "Green Room",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": "Dressing Rooms",
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": []
+    },
+    {
+      "Id": "room-7471-A",
+      "Name": "1 circuit + Room 1, 2, 3",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [
+        "room-7503-A",
+        "room-7472-A",
+        "room-7501-A",
+        "room-7502-A"
+      ],
+      "IsComboRoom": true,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-7501-A",
+        "room-7502-A",
+        "room-7472-A",
+        "room-7503-A"
+      ]
+    },
+    {
+      "Id": "room-7503-A",
+      "Name": "Circuit",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-7471-A"
+      ]
+    },
+    {
+      "Id": "room-7469-A",
+      "Name": "Meeting Room 1",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": []
+    },
+    {
+      "Id": "room-7470-A",
+      "Name": "Meeting Room 2",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": []
+    },
+    {
+      "Id": "room-7472-A",
+      "Name": "Room 1",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-7471-A"
+      ]
+    },
+    {
+      "Id": "room-7501-A",
+      "Name": "Room 2",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-7471-A"
+      ]
+    },
+    {
+      "Id": "room-7502-A",
+      "Name": "Room 3",
+      "MaxCapacity": null,
+      "SquareFootage": null,
+      "VenueId": "venue-662-A",
+      "VenueName": "UB Arena",
+      "Group": null,
+      "ItemCode": null,
+      "SubRoomIds": [],
+      "IsComboRoom": false,
+      "IsActive": true,
+      "ConflictingRoomIds": [
+        "room-7471-A"
+      ]
     }
   ],
   "ClusterCode": "indv",
-  "TenantId": "account-3420-A"
+  "TenantId": "account-3421-A"
 }

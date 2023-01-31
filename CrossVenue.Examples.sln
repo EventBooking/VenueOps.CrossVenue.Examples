@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CVC.Example", "CVC.Example\CVC.Example.csproj", "{E264C305-CA6E-4BEC-A4A3-A7273538F3A5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CVC.Writer", "src\CVC.Writer\CVC.Writer.csproj", "{6450651E-D347-4FE7-9643-61A4D8B0E1A8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CVC.Reader", "src\CVC.Reader\CVC.Reader.csproj", "{B625C464-5EB6-4CB1-B0F9-5D777E36F9ED}"
@@ -12,10 +10,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E264C305-CA6E-4BEC-A4A3-A7273538F3A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E264C305-CA6E-4BEC-A4A3-A7273538F3A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E264C305-CA6E-4BEC-A4A3-A7273538F3A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E264C305-CA6E-4BEC-A4A3-A7273538F3A5}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6450651E-D347-4FE7-9643-61A4D8B0E1A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6450651E-D347-4FE7-9643-61A4D8B0E1A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6450651E-D347-4FE7-9643-61A4D8B0E1A8}.Release|Any CPU.ActiveCfg = Release|Any CPU

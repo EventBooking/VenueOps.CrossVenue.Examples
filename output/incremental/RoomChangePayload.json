@@ -1,36 +1,32 @@
 {
   "Venue": {
-    "Id": "venue-17",
-    "Name": "Arena"
+    "Id": "venue-662-A",
+    "Name": "UB Arena"
   },
   "Room": {
-    "Id": "room-5015",
-    "Name": "VenueOps Arena",
+    "Id": "room-2452-A",
+    "Name": "Arena (entire)",
     "MaxCapacity": null,
     "SquareFootage": null,
-    "VenueId": "venue-17",
-    "VenueName": "Arena",
-    "Group": null,
+    "VenueId": "venue-662-A",
+    "VenueName": "UB Arena",
+    "Group": "Arena",
     "ItemCode": null,
     "SubRoomIds": [
-      "room-451",
-      "room-452",
-      "room-424",
-      "room-10096-A",
-      "room-419",
-      "room-13857-A"
+      "room-2447-A",
+      "room-2455-A",
+      "room-2454-A",
+      "room-2440-A"
     ],
     "IsComboRoom": true,
     "IsActive": true,
     "ConflictingRoomIds": [
-      "room-424",
-      "room-10096-A",
-      "room-452",
-      "room-419",
-      "room-451",
-      "room-13857-A"
+      "room-2447-A",
+      "room-2454-A",
+      "room-2455-A",
+      "room-2440-A"
     ]
   },
   "ClusterCode": "indv",
-  "TenantId": "account-3420-A"
+  "TenantId": "account-3421-A"
 }
