@@ -1,4 +1,6 @@
-namespace CVC.Example.Models.Incremental;
+using VenueOps.OpenApi.Models;
+
+namespace CVC.Common.Models.Incremental;
 
 public class RoomChangePayload : BasePayload
 {

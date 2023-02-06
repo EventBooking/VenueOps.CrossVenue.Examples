@@ -1,8 +1,7 @@
-﻿using CVC.Example.Models;
-using CVC.Example.Models.Incremental;
+﻿using CVC.Common.Models.Incremental;
 using VenueOps.OpenApi;
 
-namespace CVC.Example.Services;
+namespace CVC.Writer.Services;
 
 public class IncrementalSampleGenerator
 {

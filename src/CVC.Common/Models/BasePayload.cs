@@ -1,4 +1,4 @@
-﻿namespace CVC.Example.Models;
+﻿namespace CVC.Common.Models;
 
 public class BasePayload
 {

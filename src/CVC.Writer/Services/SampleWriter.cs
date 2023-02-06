@@ -1,10 +1,10 @@
 ﻿using System.Net;
 using Amazon.S3;
 using Amazon.S3.Model;
-using CVC.Example.Models;
+using CVC.Common.Models;
 using Newtonsoft.Json;
 
-namespace CVC.Example.Services;
+namespace CVC.Writer.Services;
 
 public class SampleWriter
 {

@@ -1,19 +1,21 @@
-﻿using CVC.Example.Services;
+﻿using CVC.Writer.Services;
 using VenueOps.OpenApi;
 
 var dir = Environment.GetEnvironmentVariable("CvcDir");
 if (string.IsNullOrWhiteSpace(dir))
     dir = Directory.GetCurrentDirectory();
 
-var clusterCode = Environment.GetEnvironmentVariable("CvcCluster"); // Example: INDV
-var tenantId = Environment.GetEnvironmentVariable("CvcTenantId"); // Example: account-3420-A
+var clusterCode = Environment.GetEnvironmentVariable("CvcCluster") ?? string.Empty; // Example: INDV
+var tenantId = Environment.GetEnvironmentVariable("CvcTenantId") ?? string.Empty; // Example: account-3420-A
 var clientId = Environment.GetEnvironmentVariable("CvcClientId"); // VenueOps Open API credentials
 var clientSecret = Environment.GetEnvironmentVariable("CvcClientSecret"); // VenueOps Open API credentials
 var client = new ApiClient(clusterCode, clientId, clientSecret);
 
+var prefix = $"{clusterCode.ToLowerInvariant()}/{tenantId}";
+
 // INCREMENTAL
 var incrementalGenerator = new IncrementalSampleGenerator(client);
-var incrementalWriter = new SampleWriter(Path.Join(dir, "incremental"), "cvc.sample.data", $"{tenantId}/incremental");
+var incrementalWriter = new SampleWriter(Path.Join(dir, "incremental"), "cvc.sample.data", $"{prefix}/incremental");
 
 var venueModel = await incrementalGenerator.LoadVenue(clusterCode, tenantId);
 await incrementalWriter.Write(venueModel);
@@ -26,7 +28,7 @@ await incrementalWriter.Write(eventModel);
 
 // BULK
 var bulkGenerator = new BulkSampleGenerator(client);
-var bulkWriter = new SampleWriter(Path.Join(dir, "bulk"), "cvc.sample.data", $"{tenantId}/bulk");
+var bulkWriter = new SampleWriter(Path.Join(dir, "bulk"), "cvc.sample.data", $"{prefix}/bulk");
 
 var setupModel = await bulkGenerator.LoadSetup(clusterCode, tenantId);
 await bulkWriter.Write(setupModel);

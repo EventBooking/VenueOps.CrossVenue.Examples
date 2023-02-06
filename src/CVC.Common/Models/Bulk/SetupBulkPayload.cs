@@ -1,4 +1,6 @@
-﻿namespace CVC.Example.Models.Bulk;
+﻿using VenueOps.OpenApi.Models;
+
+namespace CVC.Common.Models.Bulk;
 
 public class SetupBulkPayload : BasePayload
 {

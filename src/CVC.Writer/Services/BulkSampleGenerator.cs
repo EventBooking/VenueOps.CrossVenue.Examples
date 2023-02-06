@@ -1,8 +1,7 @@
-﻿using CVC.Example.Models;
-using CVC.Example.Models.Bulk;
+﻿using CVC.Common.Models.Bulk;
 using VenueOps.OpenApi;
 
-namespace CVC.Example.Services;
+namespace CVC.Writer.Services;
 
 public class BulkSampleGenerator
 {
