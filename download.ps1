@@ -5,7 +5,7 @@ $env:CvcTenantId = 'account-3421-A'
 $env:CvcAwsAccessKey = 'AKIA4M4F7WRHXJKGQYVK'
 
 $env:CvcDir = ''
-$env:CvcAwsSecretKey = 'SECRET SENT SEPARATELY'
+$env:CvcAwsSecretKey = 'SECRET KEY SENT SEPARATELY'
 
 PUSHD src
 PUSHD CVC.Reader

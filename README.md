@@ -1,6 +1,21 @@
 # VenueOps.CrossVenue.Examples
 
-## CVC Example
+## CVC Reader
+
+This tool demonstrates how to download the data models from S3. You can use the `download.ps1` script to set the necessary environment variables and then run the tool. Before running it, you wil need to set these two variables:
+
+```
+$env:CvcDir = 'YOUR LOCAL DIRECTORY WHERE THE FILES SHOULD BE PLACED'
+$env:CvcAwsSecretKey = 'SECRET KEY SENT SEPARATELY'
+```
+
+Once you have set these and run the script, you should see a set of folders/files in the specified directory.
+
+## Next Steps
+
+We will be finding a way to publish the VenueOps API SDK NuGet package so that it is available to the cross-platform team, and possibly publicly available for clients as well. At that point, we will update this repo with a more complete example of how to retrieve the payloads and deserialize them.
+
+## Payload Examples
 
 See the `output` folder for payload examples. Each payload contains `ClusterCode` and `TenantId`. This is enough information to uniquely identify a tenant.
 
