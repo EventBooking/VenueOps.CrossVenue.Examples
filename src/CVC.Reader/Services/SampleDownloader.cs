@@ -3,8 +3,9 @@ using Amazon;
 using Amazon.Runtime;
 using Amazon.S3;
 using Amazon.S3.Model;
+using CVC.Common.Helpers;
 
-namespace CVC.Reader;
+namespace CVC.Reader.Services;
 
 public class SampleDownloader
 {
@@ -21,7 +22,7 @@ public class SampleDownloader
         _region = RegionEndpoint.GetBySystemName(region);
     }
 
-    public async Task Download(string prefix, string dir)
+    public async Task Download(string clusterCode, string tenantId, string dir)
     {
         var cred = new BasicAWSCredentials(_accessKey, _secretKey);
         var client = new AmazonS3Client(cred, _region);
@@ -29,7 +30,7 @@ public class SampleDownloader
         var request = new ListObjectsRequest
         {
             BucketName = _bucket,
-            Prefix = prefix,
+            Prefix = PayloadHelper.GetPrefix(clusterCode, tenantId),
         };
         for (;;)
         {

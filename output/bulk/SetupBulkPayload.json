@@ -1684,6 +1684,188 @@
       ]
     }
   ],
+  "EventTypes": [
+    {
+      "Id": "eventtype-1060-A",
+      "Name": "Broadway"
+    },
+    {
+      "Id": "eventtype-1064-A",
+      "Name": "Comedy"
+    },
+    {
+      "Id": "eventtype-1061-A",
+      "Name": "Community Event"
+    },
+    {
+      "Id": "eventtype-1049-A",
+      "Name": "Concert"
+    },
+    {
+      "Id": "eventtype-1047-A",
+      "Name": "Conference"
+    },
+    {
+      "Id": "eventtype-1050-A",
+      "Name": "Consumer/Public Show"
+    },
+    {
+      "Id": "eventtype-1059-A",
+      "Name": "Dance"
+    },
+    {
+      "Id": "ad4c41ece2ed4b8089639720375a31bd",
+      "Name": "Education"
+    },
+    {
+      "Id": "eventtype-1051-A",
+      "Name": "Exhibition/Trade Show"
+    },
+    {
+      "Id": "eventtype-1053-A",
+      "Name": "Family Show"
+    },
+    {
+      "Id": "eventtype-1056-A",
+      "Name": "Gala"
+    },
+    {
+      "Id": "eventtype-1054-A",
+      "Name": "Meeting"
+    },
+    {
+      "Id": "eventtype-1058-A",
+      "Name": "Orchestral"
+    },
+    {
+      "Id": "eventtype-1048-A",
+      "Name": "Party"
+    },
+    {
+      "Id": "eventtype-1062-A",
+      "Name": "Performance"
+    },
+    {
+      "Id": "eventtype-1635-A",
+      "Name": "Reception"
+    },
+    {
+      "Id": "eventtype-1063-A",
+      "Name": "Rehearsal"
+    },
+    {
+      "Id": "eventtype-1065-A",
+      "Name": "Seminar"
+    },
+    {
+      "Id": "5b2377e28b834ba89d6f20b2ed0a6314",
+      "Name": "Special Exhibition"
+    },
+    {
+      "Id": "eventtype-1057-A",
+      "Name": "Sporting Event"
+    },
+    {
+      "Id": "eventtype-1052-A",
+      "Name": "Theater"
+    },
+    {
+      "Id": "eventtype-1055-A",
+      "Name": "Wedding"
+    },
+    {
+      "Id": "eventtype-1337-A",
+      "Name": "Wrestling"
+    }
+  ],
+  "BusinessClassifications": [
+    {
+      "Id": "fe13f869caa04577a44f7d1826fe32b7",
+      "Name": "Standard Rental"
+    },
+    {
+      "Id": "e3e784a3983649b69015c9440eef568e",
+      "Name": "Tenant"
+    },
+    {
+      "Id": "5efe7a865e714f08afaebfd530038f0e",
+      "Name": "Major Partner | Sponsor"
+    },
+    {
+      "Id": "ea3d48db97524537aeb29cbd2a31b679",
+      "Name": "Self-promoted"
+    },
+    {
+      "Id": "ea29b40df7584712ae4ff577d1f2dbcc",
+      "Name": "Co-promoted"
+    },
+    {
+      "Id": "0099cb6a0c88467eb90013e91bb6c5da",
+      "Name": "DMO/CVB"
+    },
+    {
+      "Id": "81ccfd21ce0d42178b94d65dbd34157e",
+      "Name": "Government"
+    },
+    {
+      "Id": "e27d71b2bff9448fab7b5f830775a4d4",
+      "Name": "Internal"
+    }
+  ],
+  "SpaceUsages": [
+    {
+      "Id": "b84135875931418fbf1d15ddb1eca8e5",
+      "Name": "Event"
+    },
+    {
+      "Id": "1f4de561ee9b4680a978804423bd0c71",
+      "Name": "Meeting"
+    },
+    {
+      "Id": "d05b3ce544b44123a7c1b14a60124fb1",
+      "Name": "Performance"
+    },
+    {
+      "Id": "c3cb2b285352493b80a2f6fa0ec40c29",
+      "Name": "Rehearsal"
+    },
+    {
+      "Id": "2b79b59bbaeb4b1fb1ac2b6f7697ef3c",
+      "Name": "Move-in"
+    },
+    {
+      "Id": "68ddae21301e4bbdb5b1f7b92e3b4fd5",
+      "Name": "Build Day"
+    },
+    {
+      "Id": "83c18d18240f494883f2c0351a0ff102",
+      "Name": "Move-out"
+    },
+    {
+      "Id": "f1c75408c5034448a9b8d0151aa046b3",
+      "Name": "Room Strike"
+    },
+    {
+      "Id": "095857f1d2e94d728374775753f7f294",
+      "Name": "Change Over"
+    },
+    {
+      "Id": "d8e04889545e4469b7ba0cbfd5f27c91",
+      "Name": "Dark"
+    },
+    {
+      "Id": "fcfb64439521403d8ac1044571f1ccf9",
+      "Name": "🎯 Target"
+    },
+    {
+      "Id": "c9b879e8d1154df2b2b19fee6f06253d",
+      "Name": "Education"
+    },
+    {
+      "Id": "0647a493d78b43d09144dcc22099fbd0",
+      "Name": "Exhibition"
+    }
+  ],
   "ClusterCode": "indv",
   "TenantId": "account-3421-A"
 }

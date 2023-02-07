@@ -16,6 +16,9 @@ public class BulkSampleGenerator
     {
         var allVenues = await _client.GeneralSetup.GetVenuesAsync();
         var allRooms = await _client.GeneralSetup.GetRoomsAsync();
+        var eventTypes = await _client.EventSetup.GetEventTypesAsync();
+        var businessClassifications = await _client.EventSetup.GetBusinessClassificationsAsync();
+        var spaceUsages = await _client.EventSetup.GetSpaceUsagesAsync();
 
         var venues = allVenues.Response.Select(v => new VenueBulkSingle
         {
@@ -27,7 +30,10 @@ public class BulkSampleGenerator
         {
             ClusterCode = clusterCode,
             TenantId = tenantId,
-            Venues = venues
+            Venues = venues,
+            EventTypes = eventTypes.Response,
+            BusinessClassifications = businessClassifications.Response,
+            SpaceUsages = spaceUsages.Response
         };
         return model;
     }

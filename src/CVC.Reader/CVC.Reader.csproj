@@ -8,10 +8,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="AWSSDK.S3" Version="3.7.102" />
-    </ItemGroup>
-    
-    <ItemGroup>
       <ProjectReference Include="..\CVC.Common\CVC.Common.csproj" />
     </ItemGroup>
 
