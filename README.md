@@ -2,12 +2,7 @@
 
 ## CVC Reader
 
-You may need to add this URL to your NuGet Sources configuration
-```
-https://nuget.pkg.github.com/EventBooking/index.json
-```
-
-This tool demonstrates how to download the data models from S3. You can use the `download.ps1` script to set the necessary environment variables and then run the tool. Before running it, you wil need to set these two variables:
+This tool demonstrates how to download the data models from S3. You can use the `download.ps1` script to set the necessary environment variables and then run the tool. Before running it, you wil need to set these this variable:
 
 ```
 $env:CvcDir = 'YOUR LOCAL DIRECTORY WHERE THE FILES SHOULD BE PLACED'
