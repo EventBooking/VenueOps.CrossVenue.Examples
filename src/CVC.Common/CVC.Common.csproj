@@ -9,7 +9,13 @@
 
     <ItemGroup>
         <PackageReference Include="AWSSDK.S3" Version="3.7.102" />
-        <PackageReference Include="VenueOps.OpenApi" Version="1.48.2" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="VenueOps.OpenApi">
+        <HintPath>VenueOps.OpenApi.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>

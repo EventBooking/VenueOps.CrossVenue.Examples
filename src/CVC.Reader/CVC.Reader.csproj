@@ -11,4 +11,10 @@
       <ProjectReference Include="..\CVC.Common\CVC.Common.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Reference Include="VenueOps.OpenApi">
+        <HintPath>..\CVC.Common\VenueOps.OpenApi.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>
