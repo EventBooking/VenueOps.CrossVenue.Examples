@@ -24,8 +24,10 @@ public class IncrementalSampleGenerator
         {
             ClusterCode = clusterCode,
             TenantId = tenantId,
+            Operation = ObjectOperation.Upsert,
+            ObjectType = ObjectType.Venue,
             Venue = venue,
-            Rooms = rooms
+            Rooms = rooms,
         };
         return model;
     }
@@ -40,6 +42,8 @@ public class IncrementalSampleGenerator
         {
             ClusterCode = clusterCode,
             TenantId = tenantId,
+            Operation = ObjectOperation.Upsert,
+            ObjectType = ObjectType.Room, 
             Venue = venue,
             Room = room
         };
@@ -51,13 +55,6 @@ public class IncrementalSampleGenerator
         var allVenues = await _client.GeneralSetup.GetVenuesAsync();
         var allRooms = await _client.GeneralSetup.GetRoomsAsync();
         
-        // var request = new QueryEventsRequest
-        // {
-        //     VenueIds = new List<string>{venue.Venue.Id},
-        //     ShowActiveOnly = true,
-        //     SearchText = "Invoice"
-        // };
-        // var events = await _client.Events.QueryEventsAsync(request);
         var request2 = new QueryEventsByDateRangeRequest
         {
             VenueIds = new List<string>{venue.Venue.Id},
@@ -69,6 +66,7 @@ public class IncrementalSampleGenerator
         var oneEvent = events2.Response.First();
 
         var bookedSpaces = await _client.BookedSpaces.GetBookedSpacesAsync(oneEvent.Id);
+        var account = await _client.Accounts.GetAccountAsync(oneEvent.AccountId);
         var venues = allVenues.Response.Where(x => oneEvent.VenueIds.Contains(x.Id));
         var rooms = allRooms.Response.Where(x => oneEvent.RoomIds.Contains(x.Id));
         
@@ -76,8 +74,11 @@ public class IncrementalSampleGenerator
         {
             ClusterCode = clusterCode,
             TenantId = tenantId,
+            Operation = ObjectOperation.Upsert,
+            ObjectType = ObjectType.Event,
             Event = oneEvent,
             BookedSpaces = bookedSpaces.Response,
+            Account = account.Response,
             Venues = venues,
             Rooms = rooms
         };

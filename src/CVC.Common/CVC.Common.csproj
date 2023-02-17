@@ -1,16 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>netstandard1.2</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>disable</Nullable>
         <LangVersion>default</LangVersion>
+        <AssemblyVersion>1.0.0.1</AssemblyVersion>
+        <FileVersion>1.0.0.1</FileVersion>
     </PropertyGroup>
-
-    <ItemGroup>
-        <PackageReference Include="AWSSDK.S3" Version="3.7.102" />
-        <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
-    </ItemGroup>
 
     <ItemGroup>
       <Reference Include="VenueOps.OpenApi">

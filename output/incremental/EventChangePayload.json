@@ -120,6 +120,35 @@
       "IsInvoiced": false
     }
   ],
+  "Account": {
+    "Id": "account-1076",
+    "Name": "Predators",
+    "LeadSource": "Other",
+    "MarketSegment": "Other",
+    "AccountManagerId": null,
+    "AccountManagerName": null,
+    "IsTaxExempt": false,
+    "TaxExemptIds": [],
+    "Description": null,
+    "Website": null,
+    "RequirePurchaseOrderNumberOnInvoices": false,
+    "IsActive": true,
+    "CreatedOn": "2018-10-19T18:06:51Z",
+    "UniqueNumber": "1-1076",
+    "TaxId": null,
+    "SecondaryTaxId": null,
+    "PrimaryAddress": null,
+    "SecondaryAddresses": [],
+    "AllAddresses": [],
+    "PrimaryEmail": null,
+    "SecondaryEmails": [],
+    "AllEmails": [],
+    "PrimaryPhone": null,
+    "SecondaryPhones": [],
+    "AllPhones": [],
+    "ExternalIds": [],
+    "Tags": []
+  },
   "Venues": [
     {
       "Id": "venue-662-A",
@@ -152,6 +181,9 @@
       ]
     }
   ],
+  "Operation": "upsert",
+  "ObjectType": "event",
+  "ObjectId": null,
   "ClusterCode": "indv",
   "TenantId": "account-3421-A"
 }

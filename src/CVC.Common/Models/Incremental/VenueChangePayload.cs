@@ -2,7 +2,7 @@
 
 namespace CVC.Common.Models.Incremental;
 
-public class VenueChangePayload : BasePayload
+public class VenueChangePayload : IncrementalBasePayload
 {
     public VenueResponse Venue { get; set; }
     public IEnumerable<RoomResponse> Rooms { get; set; }

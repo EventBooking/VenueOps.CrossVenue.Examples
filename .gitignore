@@ -27,3 +27,4 @@ wwwroot
 **/.idea/**/modules.xml
 **/.idea/**/aws.xml
 /download
+/packages

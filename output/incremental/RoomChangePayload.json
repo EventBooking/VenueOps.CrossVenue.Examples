@@ -27,6 +27,9 @@
       "room-2440-A"
     ]
   },
+  "Operation": "upsert",
+  "ObjectType": "room",
+  "ObjectId": null,
   "ClusterCode": "indv",
   "TenantId": "account-3421-A"
 }
