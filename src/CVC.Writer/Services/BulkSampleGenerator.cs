@@ -38,6 +38,34 @@ public class BulkSampleGenerator
         return model;
     }
 
+    public async Task<AccountBulkPayload> LoadAccounts(string clusterCode, string tenantId, int pageSize, int page)
+    {
+        var response = await _client.Accounts.SearchAccountsAsync("", pageSize, page);
+        if (!response.IsSuccessStatusCode || !response.Response.Any())
+            return new AccountBulkPayload();
+        
+        return new AccountBulkPayload
+        {
+            TenantId = tenantId,
+            ClusterCode = clusterCode,
+            Accounts = response.Response
+        };
+    }
+    
+    public async Task<ContactBulkPayload> LoadContacts(string clusterCode, string tenantId, int pageSize, int page)
+    {
+        var response = await _client.Contacts.SearchContactsAsync("", pageSize, page);
+        if (!response.IsSuccessStatusCode || !response.Response.Any())
+            return new ContactBulkPayload();
+        
+        return new ContactBulkPayload
+        {
+            TenantId = tenantId,
+            ClusterCode = clusterCode,
+            Contacts = response.Response
+        };
+    }
+
     public async Task<EventBulkPayload> LoadEvents(string clusterCode, string tenantId, string venueId, IEnumerable<string> roomIds, DateTime start, DateTime end) 
     {
         var request = new QueryEventsByDateRangeRequest

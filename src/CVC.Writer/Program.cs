@@ -35,19 +35,46 @@ await bulkWriter.Write(setupModel);
 
 var start = DateTime.Parse("2022-12-01");
 var end = DateTime.Parse("2025-12-01");
-var pageSize = TimeSpan.FromDays(28);
-    
+var eventPageSize = TimeSpan.FromDays(28);
+
+// events
 var roomIds = venueModel.Rooms.Select(x => x.Id).ToList();
 var page = 0;
-for ( var date = start; date < end; date += pageSize)
+for ( var date = start; date < end; date += eventPageSize)
 {
     var bulkEvents =
-        await bulkGenerator.LoadEvents(clusterCode, tenantId, venueModel.Venue.Id, roomIds, date, date + pageSize);
+        await bulkGenerator.LoadEvents(clusterCode, tenantId, venueModel.Venue.Id, roomIds, date, date + eventPageSize);
     if (bulkEvents.Events.Any())
     {
         await bulkWriter.Write(bulkEvents, page);
         page++;
     }
 }
+
+// accounts
+// const int accountPageSize = 100;
+// for (page = 0;; page++)
+// {
+//     var bulkAccounts =
+//         await bulkGenerator.LoadAccounts(clusterCode, tenantId, accountPageSize, page);
+//     if (!bulkAccounts.Accounts.Any())
+//         break;
+//
+//     await bulkWriter.Write(bulkAccounts, page);
+//     page++;
+// }
+
+// contacts
+// const int contactPageSize = 100;
+// for (page = 0;; page++)
+// {
+//     var bulkContacts =
+//         await bulkGenerator.LoadContacts(clusterCode, tenantId, contactPageSize, page);
+//     if (!bulkContacts.Contacts.Any())
+//         break;
+//
+//     await bulkWriter.Write(bulkContacts, page);
+//     page++;
+// }
 
 // Bucket: cvc.sample.data
